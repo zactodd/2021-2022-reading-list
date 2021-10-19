@@ -1,40 +1,80 @@
-\documentclass[5p]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsfonts}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{subfig, geometry, graphicx, hyperref}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
-\usepackage[sort&compress,numbers]{natbib}
-\usepackage{amsmath, makecell}
-\usepackage{enumitem}
-\usepackage{tikz}
-\usepackage{longtable}
-\usepackage{standalone}
-\usepackage[english]{babel}
-\usepackage{wrapfig}
-\usepackage{natbib}
-\usepackage[ruled,vlined]{algorithm2e}
-\usepackage{bbm}
-\usepackage{pdfpages} 
-\usepackage[toc,page]{appendix}
-\usepackage{gensymb}
-\usepackage{pdflscape}
-\usepackage{pgfgantt}
-
-
-
+\documentclass[7p]{article}
+\usepackage[sort, numbers]{natbib} 
 \usepackage[nottoc]{tocbibind}
+\usepackage{geometry}
 
-\bibliographystyle{unsrtnat}
-
+\bibliographystyle{plainnat}
+\nocite{lecun1998gradient, NairH10, krizhevsky2012imagenet,  srivastava2014dropout, kingma2014adam, girshick2014rich, ioffe2015batch, girshick2015fast, ren2015faster, he2016deep, redmon2016you,  salimans2016weight, zerhouni2017wide, xie2017aggregated, zhang2017mixup, He2017, vaswani2017attention, hu2018squeeze, wu2018group, sandler2018mobilenetv2,redmon2018yolov3, yun2019cutmix,cai2019cascade, chen2019hybrid, tan2019efficientnet,tan2020efficientdet, cubuk2020randaugment, dosovitskiy2020image, tan2021efficientnetv2,   liu2021swin,     wightman2021resnet}
+\title{Reading List 2021-2022}
 \begin{document}
-\nocite{lecun1998gradient, krizhevsky2012imagenet, NairH10, ioffe2015batch, he2016deep, zerhouni2017wide, xie2017aggregated, hu2018squeeze, sandler2018mobilenetv2,  tan2019efficientnet, tan2021efficientnetv2, vaswani2017attention, dosovitskiy2020image,  liu2021swin, girshick2014rich, girshick2015fast, ren2015faster, He2017, tan2020efficientdet, cai2019cascade, chen2019hybrid, redmon2016you, redmon2018yolov3, zhang2017mixup, yun2019cutmix, cubuk2020randaugment, wightman2021resnet}
+\maketitle
+\section*{Readings by Category}
+The readings below are grouped here by their relevant category, some readings appear in more than one category.
+\subsection*{Convolutional Neural Networks}
+\citet{lecun1998gradient, krizhevsky2012imagenet, simonyan2014very, szegedy2015going, he2016deep, zerhouni2017wide, xie2017aggregated, hu2018squeeze, sandler2018mobilenetv2,  tan2019efficientnet, tan2021efficientnetv2}
 
-\renewcommand{\bibname}{2021-2022 Reading List.}
+\subsection*{Transformers}
+\citet{vaswani2017attention, cordonnier2019relationship, dosovitskiy2020image, liu2021swin}
+
+\subsection*{Anchor Based Detection and Segmentation Methods}
+\citet{girshick2014rich, girshick2015fast, ren2015faster, He2017, tan2020efficientdet, cai2019cascade, chen2019hybrid}
+
+\subsection*{Anchor Free Detection and Segmentation Methods}
+\citet{redmon2016you, redmon2018yolov3}
+
+\subsection*{Neural Architecture Search Methods}
+\citet{tan2019efficientnet, tan2021efficientnetv2, tan2020efficientdet}
+
+\subsection*{Regularisation and Normalisation}
+\citet{srivastava2014dropout, ioffe2015batch, salimans2016weight, wu2018group}
+
+\subsection*{Optimisation}
+\citet{kingma2014adam}
+
+\subsection*{Activation Functions}
+\citet{NairH10, Maas13rectifiernonlinearities, hendrycks2016gaussian, Ramachandran2018}
+
+\subsection*{Image Augmentations}
+\citet{zhang2017mixup, yun2019cutmix, cubuk2020randaugment, wightman2021resnet}
+
+\subsection*{Other}
+\citet{kolesnikov2019big, wightman2021resnet}
+
+\section*{Readings by Year}
+\subsection*{Before 2012}
+\citet{lecun1998gradient, NairH10}
+
+\subsection*{2012}
+\citet{krizhevsky2012imagenet}
+
+\subsection*{2013}
+\citet{Maas13rectifiernonlinearities}
+
+\subsection*{2014}
+\citet{srivastava2014dropout,  girshick2014rich, kingma2014adam}
+
+\subsection*{2015}
+\citet{ioffe2015batch, girshick2015fast, ren2015faster}
+
+\subsection*{2016}
+\citet{he2016deep,redmon2016you, salimans2016weight,hendrycks2016gaussian}
+
+\subsection*{2017}
+\citet{zerhouni2017wide, xie2017aggregated, zhang2017mixup, He2017, vaswani2017attention}
+
+\subsection*{2018}
+\citet{hu2018squeeze, wu2018group, sandler2018mobilenetv2,redmon2018yolov3, Ramachandran2018}
+
+\subsection*{2019}
+\citet{kolesnikov2019big, yun2019cutmix, cai2019cascade, chen2019hybrid, tan2019efficientnet}
+
+\subsection*{2020}
+\citet{an2020efficientdet, cubuk2020randaugment, dosovitskiy2020image}
+
+\subsection*{2021}
+\citet{tan2021efficientnetv2,   liu2021swin,     wightman2021resnet}
+
+\renewcommand{\bibname}{References}
 \bibliography{bib} 
 
 \end{document}
